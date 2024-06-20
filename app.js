@@ -4,7 +4,8 @@ const express = require('express');
 const mysql = require('mysql');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // Change 3001 to any available port number
+
 
 // MySQL Connection
 const connection = mysql.createConnection({
