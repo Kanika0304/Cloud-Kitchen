@@ -44,3 +44,34 @@ function fadeOut(){
 }
 
 window.onload = fadeOut();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const orderForm = document.getElementById('orderForm');
+
+  orderForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const foodItem = this.querySelector('input[name="foodItem"]').value;
+
+    // Send order details to server
+    fetch('/submit-order', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ foodItem })
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Your order has been placed!');
+      } else {
+        throw new Error('Failed to submit order');
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting order:', error);
+      alert('Failed to submit order. Please try again later.');
+    });
+  });
+});

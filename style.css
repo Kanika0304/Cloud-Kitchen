@@ -621,3 +621,56 @@ h3 {
 
 }
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .navbar a {
+        margin: 1rem 0;
+    }
+
+    #menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu-bar.active ~ .navbar {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home .content, .home .image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .menu .menu-container {
+        flex-direction: column;
+    }
+
+    .order .row {
+        flex-direction: column;
+    }
+
+    .order .image, .order form {
+        flex: 1 1 100%;
+    }
+  }
