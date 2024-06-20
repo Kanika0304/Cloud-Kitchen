@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-  --red:#fa3a3a;
+  --red:#655656;
 }
 
 *{
@@ -16,7 +16,7 @@
 
 *::selection{
   background:var(--red);
-  color:#0c0c0c;
+  color:#fef7f7;
 }
 
 html{
@@ -28,7 +28,7 @@ html{
 
 /* Add a background image to the whole page */
 body {
-  background-image: url("img/Untitled design.jpg");
+  background-image: url("img/bbbbbbbbb.png");
   background-size: cover;
 	background-position: top center;
 	height: 50vw;
@@ -45,7 +45,7 @@ section{
   text-align: center;
   font-size: 3.5rem;
   padding:1rem;
-  color:#666;
+  color:#282828;
 }
 
 .heading span{
@@ -53,17 +53,18 @@ section{
 }
 
 .content span{
-  color:black;
+  color:rgb(2, 2, 2);
 }
 
 .btn{
   display: inline-block;
   padding:.8rem 3rem;
   border:.2rem solid var(--red);
-  color:var(--red);
+  color:whitesmoke;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: .5rem;
+  border-color: #ccc;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -76,7 +77,7 @@ section{
   top:0; right: 0;
   width:0%;
   height:100%;
-  background:var(--red);
+  background:#9c9c9b;
   transition: .3s linear;
   z-index: -1;
 }
@@ -105,7 +106,7 @@ header{
 header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
-  color:#666;
+  color:#b5b1b1;
 }
 
 header .logo i{
@@ -116,21 +117,21 @@ header .logo i{
 header .navbar a{
   font-size: 2rem;
   margin-left: 2rem;
-  color:#666;
+  color:#bdbbbb;
 }
 
 header .navbar a:hover{
-  color:var(--red);
+  color:#edddb9;
 }
 /* About Section Styling */
 .about {
-  background: hsl(60, 2%, 12%);
+  background: hsl(60, 0%, 41%);
   padding: 80px 0;
 
 }
 
 .about .heading span {
-  color: hsl(0, 46%, 39%);
+  color: hsl(0, 3%, 87%);
 }
 
 .about .content {
@@ -142,7 +143,7 @@ header .navbar a:hover{
 
 .about h2 {
   font-size: 36px;
-  color: #904f4f;
+  color: #757485;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -161,7 +162,7 @@ header .navbar a:hover{
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(173, 169, 169, 0.1);
   padding: 40px;
-  background: #c7acac;
+  background: #c4c3c3;
 }
 
 .about p:last-child {
@@ -449,7 +450,33 @@ h3 {
 .order .row form .btn:hover{
   background:var(--red);
 }
+.order {
+  padding: 2rem 9%;
+  background-color: #1e1e1e;
+  color: white;
+}
 
+.order .heading {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #ffffff; /* Change the main heading color to white */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.order .heading span {
+  color: var(--red); /* Change the color of the span element to the defined red color */
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .footer {
   background-color: rgb(93, 104, 112);
   padding: 30px;
@@ -525,15 +552,14 @@ h3 {
 
 
 
+.home .content h3 {
+  font-size: 5rem;
+  color:#b0b0b0 /* Changed to white */
+}
 
-
-
-
-
-
-
-
-
+.home .content p {
+  font-size: 1.7rem;
+  color: #fefefe; 
 
 
 /* media queries  */
@@ -593,4 +619,5 @@ h3 {
     width:100%;
   }
 
+}
 }
